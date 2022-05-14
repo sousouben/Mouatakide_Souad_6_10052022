@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />    
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
@@ -11,14 +12,14 @@
     <script
       src="https://kit.fontawesome.com/56ca006626.js"
       crossorigin="anonymous"
-    ></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    ></script>    
     <title>Fisheye - photographe</title>
   </head>
 
   <body>
-    <header>
-      <a class="link-logo" href="index.html">
+    <!--HEADER-->
+    <header role="banner" id="header">
+      <a href="index.html">
         <img
           src="assets/images/logo.png"
           class="logo"
@@ -26,8 +27,9 @@
         />
       </a>
     </header>
-
-    <main id="main">
+    <!--FIN HEADER-->
+    <!--MAIN-->
+    <main role="main" id="main">
       <div class="photograph-header">
         <button
           class="contact_button"
@@ -45,8 +47,9 @@
         </select>
       </div>
     </main>
-
-    <div id="contact_modal">
+    <!--FIN MAIN-->
+    <!--MODAL DE CONTACT-->
+    <div role="dialog" id="contact_modal">
       <div class="modal">
         <header>
           <h2>Contactez-moi</h2>
@@ -55,13 +58,13 @@
         <form>
           <div>
             <label for="firstname">Prénom</label>
-            <input type="text" id="firstname" required />
+            <input type="text" id="firstname" minlength="2" maxlength="30" required />
             <span id="error-firstname"></span>
             <label for="lastname">Nom</label>
-            <input type="text" id="lastname" required />
+            <input type="text" id="lastname" minlength="2" maxlength="30" required />
             <span id="error-lastname"></span>
             <label for="email">Email</label>
-            <input type="email" id="email" required />
+            <input type="email" id="email" maxlength="50" required />
             <span id="error-email"></span>
             <label for="text">Votre message</label>
             <textarea
@@ -69,6 +72,7 @@
               id="text"
               cols="90"
               rows="8"
+              maxlength="100"
               required
             ></textarea>
             <span id="error-message"></span>
@@ -78,6 +82,9 @@
         </form>
       </div>
     </div>
+    <!--FIN MODAL DE CONTACT-->
+    <!--SCRIPT-->
     <script src="/scripts/utils/contactForm.js"></script>
+    <!--SCRIPT-->
   </body>
 </html>

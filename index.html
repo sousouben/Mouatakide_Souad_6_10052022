@@ -3,8 +3,9 @@
   <!--ajout de la langue-->
 
   <head>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
@@ -14,26 +15,31 @@
       src="https://kit.fontawesome.com/56ca006626.js"
       crossorigin="anonymous"
     ></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fisheye</title>
   </head>
 
   <body>
-    <header>
-      <img
-        src="assets/images/logo.png"
-        class="logo"
-        alt="Logo Fisheye Home page"
-      />
+    <!--HEADER-->
+    <header role="banner" class="index-header">
+      <a href="index.html">
+        <img
+          src="assets/images/logo.png"
+          class="logo"
+          alt="Logo Fisheye Home page"
+        />
+      </a>
       <h1>Nos photographes</h1>
     </header>
-
-    <main id="main">
+    <!--FIN HEADER-->
+    <!--MAIN-->
+    <main role="main" id="main">
       <div class="photographer_section"></div>
     </main>
-
+    <!--FIN MAIN-->
+    <!--SCRIPT-->
     <script src="scripts/factories/Photographer.js"></script>
     <script src="scripts/pages/index.js"></script>
     <script src="scripts/pages/photographer.js"></script>
+    <!--FIN SCRIPT-->
   </body>
 </html>
