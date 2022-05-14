@@ -1,5 +1,15 @@
 @import url("photographer.css");
 
+:root {
+    --primary-color: #901c1c;
+    --background-color-modal-price: #db8876;
+    --background-color-button: #911c1c;
+    --color-typo-price: #757575;
+    --name-photographer: #d3573c;
+    --tagline-photographer: #525252;
+    --background-color: #fafafa;
+  }
+
 body {
     font-family: "DM Sans", sans-serif;
     margin: 0;
@@ -15,7 +25,7 @@ header {
 }
 
 h1 {
-    color: #901C1C;
+    color: var(--primary-color);
     margin-right: 100px;
 }
 
@@ -40,7 +50,7 @@ h1 {
 }
 
 .photographer_section article h2 {
-    color: #D3573C;
+    color: var(--name-photographer);
     font-size: 36px;
 }
 
