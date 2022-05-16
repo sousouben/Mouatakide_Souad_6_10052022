@@ -1,60 +1,67 @@
 @import url("photographer.css");
 
 :root {
-    --primary-color: #901c1c;
-    --background-color-modal-price: #db8876;
-    --background-color-button: #911c1c;
-    --color-typo-price: #757575;
-    --name-photographer: #d3573c;
-    --tagline-photographer: #525252;
-    --background-color: #fafafa;
-  }
-
-body {
-    font-family: "DM Sans", sans-serif;
-    margin: 0;
+  --primary-color: #901c1c;
+  --background-color-modal-price: #db8876;
+  --background-color-button: #911c1c;
+  --color-typo-price: #757575;
+  --name-photographer: #d3573c;
+  --tagline-photographer: #525252;
+  --background-color: #fafafa;
 }
 
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+}
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
 }
 
 h1 {
-    color: var(--primary-color);
-    margin-right: 100px;
+  color: var(--primary-color);
+  margin-right: 100px;
 }
 
 .logo {
-    height: 50px;
-    margin-left: 100px;
+  height: 50px;
+  margin-left: 100px;
 }
 
 .photographer_section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 70px;
-    margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+  margin-top: 100px;
 }
 
 .photographer_section article {
-    justify-self: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .photographer_section article h2 {
-    color: var(--name-photographer);
-    font-size: 36px;
+  color: var(--name-photographer);
+  font-size: 36px;
 }
 
 .photographer_section article img {
-    height: 200px;
-    width: 200px;
+  height: 200px;
+  width: 200px;
+}
+
+.photographer_section img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
