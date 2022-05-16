@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />    
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
@@ -12,7 +12,7 @@
     <script
       src="https://kit.fontawesome.com/56ca006626.js"
       crossorigin="anonymous"
-    ></script>    
+    ></script>
     <title>Fisheye - photographe</title>
   </head>
 
@@ -31,6 +31,7 @@
     <!--MAIN-->
     <main role="main" id="main">
       <div class="photograph-header">
+        <div class="texte"></div>
         <button
           class="contact_button"
           aria-label="Contact Me"
@@ -38,7 +39,9 @@
         >
           Contactez-moi
         </button>
+        <div class="photo"></div>
       </div>
+
       <div>
         <select name="sort" id="select-sort">
           <option value="popularity">Popularité</option>
@@ -58,10 +61,22 @@
         <form>
           <div>
             <label for="firstname">Prénom</label>
-            <input type="text" id="firstname" minlength="2" maxlength="30" required />
+            <input
+              type="text"
+              id="firstname"
+              minlength="2"
+              maxlength="30"
+              required
+            />
             <span id="error-firstname"></span>
             <label for="lastname">Nom</label>
-            <input type="text" id="lastname" minlength="2" maxlength="30" required />
+            <input
+              type="text"
+              id="lastname"
+              minlength="2"
+              maxlength="30"
+              required
+            />
             <span id="error-lastname"></span>
             <label for="email">Email</label>
             <input type="email" id="email" maxlength="50" required />
