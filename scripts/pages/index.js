@@ -2,6 +2,7 @@ async function getPhotographers() {
   //Récupération ressources JSON
   const response = await fetch("data/photographers.json");
   const photographers = await response.json();
+  console.log(photographers);
   return photographers;
 }
 
