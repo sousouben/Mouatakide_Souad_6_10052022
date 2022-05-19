@@ -13,7 +13,7 @@
       src="https://kit.fontawesome.com/56ca006626.js"
       crossorigin="anonymous"
     ></script>
-    <title>Fisheye - photographe</title>
+    <title>Fisheye - page photographe</title>
   </head>
 
   <body>
@@ -29,77 +29,56 @@
     </header>
     <!--FIN HEADER-->
     <!--MAIN-->
-    <main role="main" id="main">
+    <main id="main">
       <div class="photograph-header">
-        <div class="texte"></div>
-        <button
-          class="contact_button"
-          aria-label="Contact Me"
-          onclick="displayModal()"
-        >
-          Contactez-moi
-        </button>
-        <div class="photo"></div>
       </div>
+      <section class="photograph_medias">
+        <div class="tri">
+          <p class="trier_par">Trier par</p>
+          <select class="choix" tabindex="3">
+            <option class="pop" value="pop">Popularité</option>
+            <option class="date" value="date">Date</option>
+            <option class="titre" value="titre">Titre</option>
+          </select>
+        </div>
+        <div class="cartes_medias">
 
-      <div>
-        <select name="sort" id="select-sort">
-          <option value="popularity">Popularité</option>
-          <option value="date">Date</option>
-          <option value="title">Titre</option>
-        </select>
-      </div>
+        </div>
+        <aside class="bandeau"></aside>
+      </section>
     </main>
-    <!--FIN MAIN-->
-    <!--MODAL DE CONTACT-->
-    <div role="dialog" id="contact_modal">
-      <div class="modal">
-        <header>
-          <h2>Contactez-moi</h2>
-          <img src="assets/icons/close.svg" onclick="closeModal()" />
+    <!--..............CREATION DE LA MODAL CONTACTEZ MOI................-->
+    <div id="contact_modal">
+			<div class="modal">
+				<header>
+          <h2 id="titre_modal" aria-label = "Formulaire de contact">Contactez-moi</h2>
+          <img src="assets/icons/close.svg" alt = "ferme le formulaire" onclick="closeModal()" />
         </header>
-        <form>
-          <div>
-            <label for="firstname">Prénom</label>
-            <input
-              type="text"
-              id="firstname"
-              minlength="2"
-              maxlength="30"
-              required
-            />
-            <span id="error-firstname"></span>
-            <label for="lastname">Nom</label>
-            <input
-              type="text"
-              id="lastname"
-              minlength="2"
-              maxlength="30"
-              required
-            />
-            <span id="error-lastname"></span>
-            <label for="email">Email</label>
-            <input type="email" id="email" maxlength="50" required />
-            <span id="error-email"></span>
-            <label for="text">Votre message</label>
-            <textarea
-              name="text"
-              id="text"
-              cols="90"
-              rows="8"
-              maxlength="100"
-              required
-            ></textarea>
-            <span id="error-message"></span>
+				<form id="formulaire">
+					<div class=formData>
+						<label for="first">Prénom</label>
+						<input class= "text-control" aria-label = " Entrez votre prénom" type="text" id="first" name="first" required minlength="2"/>
           </div>
-
-          <button class="contact_button" type="submit">Envoyer</button>
-        </form>
-      </div>
-    </div>
+          <div class=formData>
+						<label for="last">Nom</label>
+						<input class= "text-control" aria-label = "Entrez votre nom" type="text" id="last" name="last" required minlength="2"/>
+					</div>
+          <div class=formData>
+						<label for="email">Email</label>
+						<input class= "text-control" aria-label = "Entrez votre adresse email" type="email" id="email" name="email" required/>
+					</div>
+          <div class=formData>
+						<label for="message">Votre message</label>
+						<textarea class= "text-control" aria-label = "Détail de votre message" type="text" id="message" name="message" required></textarea>
+					</div>
+          <button class="contact_button" type = button aria-label = "envoyer le formulaire" id="envoyer">Envoyer</button>
+				</form>
+			</div>
+		</div>
     <!--FIN MODAL DE CONTACT-->
     <!--SCRIPT-->
     <script src="/scripts/utils/contactForm.js"></script>
+    <script src="scripts/pages/photographer.js"></script>
     <!--SCRIPT-->
   </body>
 </html>
