@@ -47,7 +47,8 @@
         <aside class="bandeau"></aside>
       </section>
     </main>
-    <!--..............CREATION DE LA MODAL CONTACTEZ MOI................-->
+    <!--FIN MAIN-->
+    <!--MODAL CONTACT-->
     <div id="contact_modal">
 			<div class="modal">
 				<header>
@@ -57,7 +58,7 @@
 				<form id="formulaire">
 					<div class=formData>
 						<label for="first">Prénom</label>
-						<input class= "text-control" aria-label = " Entrez votre prénom" type="text" id="first" name="first" required minlength="2"/>
+						<input class= "text-control" aria-label = " Entrez votre prénom" type="text" id="first" name="first" required minlength="2" />
           </div>
           <div class=formData>
 						<label for="last">Nom</label>
@@ -69,16 +70,17 @@
 					</div>
           <div class=formData>
 						<label for="message">Votre message</label>
-						<textarea class= "text-control" aria-label = "Détail de votre message" type="text" id="message" name="message" required></textarea>
+						<textarea class= "text-control" aria-label = "Détail de votre message" type="text" id="message" name="message" required ></textarea>
 					</div>
           <button class="contact_button" type = button aria-label = "envoyer le formulaire" id="envoyer">Envoyer</button>
 				</form>
 			</div>
 		</div>
     <!--FIN MODAL DE CONTACT-->
-    <!--SCRIPT-->
-    <script src="/scripts/utils/contactForm.js"></script>
+    <!--SCRIPT-->        
     <script src="scripts/pages/photographer.js"></script>
+    <script src="scripts/factories/fact_photographer.js"></script>
+    <script src="scripts/utils/contactForm.js"></script>
     <!--SCRIPT-->
   </body>
 </html>

@@ -1,9 +1,10 @@
-function displayModal() {
-    const modal = document.getElementById("contact_modal");
-	modal.style.display = "block";
-}
+// OUVERTURE ET FERMETURE FORMULAIRE
+let modal = document.getElementById("contact_modal");
 
+function displayModal() {
+	modal.style.display = "block";
+    prenom.focus();
+}
 function closeModal() {
-    const modal = document.getElementById("contact_modal");
     modal.style.display = "none";
 }
