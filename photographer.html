@@ -30,54 +30,94 @@
     <!--FIN HEADER-->
     <!--MAIN-->
     <main id="main">
-      <div class="photograph-header">
-      </div>
+      <div class="photograph-header"></div>
       <section class="photograph_medias">
         <div class="tri">
           <p class="trier_par">Trier par</p>
           <select class="choix" tabindex="3">
-            <option class="pop" value="pop">Popularité</option>
+            <option class="pop" value="popularity">Popularité</option>
             <option class="date" value="date">Date</option>
-            <option class="titre" value="titre">Titre</option>
+            <option class="titre" value="title">Titre</option>
           </select>
         </div>
-        <div class="cartes_medias">
-
-        </div>
-        <aside class="bandeau"></aside>
+        <div class="cartes_medias"></div>
+        <aside class="banner"></aside>
       </section>
     </main>
     <!--FIN MAIN-->
     <!--MODAL CONTACT-->
     <div id="contact_modal">
-			<div class="modal">
-				<header>
-          <h2 id="titre_modal" aria-label = "Formulaire de contact">Contactez-moi</h2>
-          <img src="assets/icons/close.svg" alt = "ferme le formulaire" onclick="closeModal()" />
+      <div class="modal">
+        <header>
+          <h2 id="titre_modal" aria-label="Formulaire de contact">
+            Contactez-moi
+          </h2>
+          <img
+            src="assets/icons/close.svg"
+            alt="ferme le formulaire"
+            onclick="closeModal()"
+          />
         </header>
-				<form id="formulaire">
-					<div class=formData>
-						<label for="first">Prénom</label>
-						<input class= "text-control" aria-label = " Entrez votre prénom" type="text" id="first" name="first" required minlength="2" />
+        <form id="formulaire">
+          <div class="formData">
+            <label for="first">Prénom</label>
+            <input
+              class="text-control"
+              aria-label=" Entrez votre prénom"
+              type="text"
+              id="first"
+              name="first"
+              required
+              minlength="2"
+            />
           </div>
-          <div class=formData>
-						<label for="last">Nom</label>
-						<input class= "text-control" aria-label = "Entrez votre nom" type="text" id="last" name="last" required minlength="2"/>
-					</div>
-          <div class=formData>
-						<label for="email">Email</label>
-						<input class= "text-control" aria-label = "Entrez votre adresse email" type="email" id="email" name="email" required/>
-					</div>
-          <div class=formData>
-						<label for="message">Votre message</label>
-						<textarea class= "text-control" aria-label = "Détail de votre message" type="text" id="message" name="message" required ></textarea>
-					</div>
-          <button class="contact_button" type = button aria-label = "envoyer le formulaire" id="envoyer">Envoyer</button>
-				</form>
-			</div>
-		</div>
+          <div class="formData">
+            <label for="last">Nom</label>
+            <input
+              class="text-control"
+              aria-label="Entrez votre nom"
+              type="text"
+              id="last"
+              name="last"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="formData">
+            <label for="email">Email</label>
+            <input
+              class="text-control"
+              aria-label="Entrez votre adresse email"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="formData">
+            <label for="message">Votre message</label>
+            <textarea
+              class="text-control"
+              aria-label="Détail de votre message"
+              type="text"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+          </div>
+          <button
+            class="contact_button"
+            type="button"
+            aria-label="envoyer le formulaire"
+            id="envoyer"
+          >
+            Envoyer
+          </button>
+        </form>
+      </div>
+    </div>
     <!--FIN MODAL DE CONTACT-->
-    <!--SCRIPT-->        
+    <!--SCRIPT-->
     <script src="scripts/pages/photographer.js"></script>
     <script src="scripts/factories/fact_photographer.js"></script>
     <script src="scripts/utils/contactForm.js"></script>

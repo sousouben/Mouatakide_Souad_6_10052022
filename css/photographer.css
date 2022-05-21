@@ -8,53 +8,52 @@
   --background-color: #fafafa;
 }
 
+/********************HEADER***************/
+
 #contact_modal {
   display: none;
 }
 
 .photograph-header {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   height: 313px;
   margin: 0 100px;
 }
 
 .photographerHeader {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 .infosPhotographe {
   display: flex;
   flex-direction: column;
   width: 30%;
   height: 100%;
-  margin-left: -120px;
 }
-  .infosPhotographe h2 {
-      font-size: 50px;
-      color: var(--name-photographer);
-  }
-  .infosPhotographe h2:focus {
-      outline: 0;
+.infosPhotographe h2 {
+  font-size: 50px;
+  color: var(--name-photographer);
+}
+.infosPhotographe h2:focus {
+  outline: 0;
   border: var(--primary-color) solid 5px;
   border-radius: 20px;
-  }
-  .infosPhotographe h3 {
-      color:var(--primary-color);
-      margin-top: -25px;
-  }
-  .infosPhotographe h4 {
-      color: var(--color-typo-price);
-      margin-top: -5px;
+}
+.infosPhotographe h3 {
+  color: var(--primary-color);
+  margin-top: -25px;
+}
+.infosPhotographe h4 {
+  color: var(--color-typo-price);
+  margin-top: -5px;
+}
 
-  }
-
-.photograph-header img{
+.photograph-header img {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  margin-right: -120px;
   margin-top: 50px;
   object-fit: cover;
 }
@@ -74,19 +73,54 @@
 
 .contact_button:hover {
   border: black solid 1px;
-  box-shadow: 3px 3px 15px #312E2E;
+  box-shadow: 3px 3px 15px #312e2e;
 }
 .contact_button:focus {
   outline: 0;
-  border : var(--name-photographer) solid 5px;
+  border: var(--name-photographer) solid 5px;
+  border-radius: 20px;
+}
+/*************MENU DU TRIE******************/
+.tri {
+  display: flex;
+  position: relative;
+  left: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.choix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 12%;
+  margin-left: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0 0 0 20px;
+  transition: all 0.3s ease;
+  justify-content: flex-start;
+}
+
+.choix:hover {
+  border: black solid 1px;
+  box-shadow: 3px 3px 15px #312e2e;
+}
+.choix:focus {
+  outline: 0;
+  border: var(--name-photographer) solid 5px;
   border-radius: 20px;
 }
 
-/*........MODAL CONTACT....*/
+/*****************MODAL CONTACT**************/
 
 .modal {
   border-radius: 5px;
-  background-color:var(--background-color-modal-price);
+  background-color: var(--background-color-modal-price);
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -99,7 +133,7 @@
 .modal header {
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 
 .modal header img {
@@ -144,4 +178,16 @@ textarea {
 
 textarea {
   height: 170px;
+}
+
+/*********BANNER**********/
+.banner {
+  background-color: #db8876;
+  width: 376px;
+  height: 70px;
+  position: fixed;
+  z-index: 1;
+  border-radius: 5px 5px 0px 0px;
+  right: 36px;
+  bottom: 0px;
 }
