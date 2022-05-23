@@ -5,8 +5,8 @@
   --color-typo-price: #757575;
   --name-photographer: #d3573c;
   --tagline-photographer: #525252;
-  --background-color: #fafafa; 
-  --box-shadow:#312e2e;
+  --background-color: #fafafa;
+  --box-shadow: #312e2e;
 }
 
 /********************HEADER***************/
@@ -110,7 +110,7 @@
 
 .choix:hover {
   border: black solid 1px;
-  box-shadow:  var(--box-shadow) 3px 3px 15px;
+  box-shadow: var(--box-shadow) 3px 3px 15px;
 }
 .choix:focus {
   outline: 0;
@@ -119,63 +119,67 @@
 }
 
 /**************MEDIAS**************/
-#cartes_medias{
+#cartes_medias {
   display: flex;
   width: 99%;
   height: 1450px;
   flex-wrap: wrap;
 }
-.carte_media{
+.carte_media {
   height: 360px;
   width: 26%;
   display: flex;
   flex-direction: column;
   margin-left: 95px;
 }
-  .carte_media img, video{
-      height: 310px;
-      width: 100%;
-      border-radius: 5px;
-      object-fit: cover;
-  }
-  .carte_media img:focus, video:focus {
-      outline: 0;
-      border: var(--primary-color) solid 5px;
-      border-radius: 20px;
-  }
-  .info_photo{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-      height: 38px;
-  }
-      .info_photo h2, .info_photo span{
-          color: var(--primary-color);
-          font-size: 20px;
-          font-weight: 500;
-      }
-      .info_photo h2{
-          width: 80%; 
-          line-height: 17px;
-      }
-      .info_photo span{
-          margin-right: 0px;
-          font-weight: 600;
-      }
-      .info_photo i{
-          color: var(--primary-color);
-          font-size: 20px;
-          cursor: pointer;
-      }
-      .info_photo i:focus{
-          outline: 0;
-          background-color: #df6c52;
-          padding: 5px;
-          border-radius: 50%;        }
+.carte_media img,
+video {
+  height: 310px;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.carte_media img:focus,
+video:focus {
+  outline: 0;
+  border: var(--primary-color) solid 5px;
+  border-radius: 20px;
+}
+.info_photo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 38px;
+}
+.info_photo h2,
+.info_photo span {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+.info_photo h2 {
+  width: 80%;
+  line-height: 17px;
+}
+.info_photo span {
+  margin-right: 0px;
+  font-weight: 600;
+}
+.info_photo i {
+  color: var(--primary-color);
+  font-size: 20px;
+  cursor: pointer;
+}
+.info_photo i:focus {
+  outline: 0;
+  background-color: #df6c52;
+  padding: 5px;
+  border-radius: 50%;
+}
 
-/************banniere prix********/    
-#banner{
+/************banniere prix********/
+#banner {
   display: flex;
   align-items: center;
   background-color: var(--background-color-modal-price);
@@ -188,7 +192,8 @@
   bottom: 0;
   margin-right: 50px;
 }
-#total_likes, #prix{
+#total_likes,
+#prix {
   font-size: 24px;
   font-weight: 600;
   margin-left: 20px;
@@ -196,9 +201,9 @@
 #prix {
   margin-left: 70px;
 }
-#banner i{
+#banner i {
   font-size: 22px;
-  margin-left: 10px;
+  margin-left: 10px;  
 }
 
 /*****************MODAL CONTACT**************/
@@ -206,13 +211,16 @@
 .modal {
   border-radius: 5px;
   background-color: var(--background-color-modal-price);
-  width: 50%;
+  width: 30%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 35px;
-  margin: auto;
+  padding: 70px;
+  margin-left: 30%;
+  position: absolute;
+  top: 9%;
 }
 
 .modal header {
@@ -228,9 +236,8 @@
 }
 
 .modal header h2 {
-  font-size: 64px;
+  font-size: 50px;
   font-weight: normal;
-  text-align: center;
 }
 
 form {
@@ -270,12 +277,12 @@ textarea {
 #banner {
   background-color: var(--background-color-modal-price);
   width: 376px;
-  height: 70px;
+  height: 89px;
   position: fixed;
   z-index: 1;
   border-radius: 5px 5px 0px 0px;
-  right: 36px;
-  bottom: 0px;
+  right: 0;
+  bottom: 0;
 }
 
 /*************LIGHTBOX***********/
@@ -285,14 +292,14 @@ textarea {
   position: fixed;
   top: 0;
   left: 0;
-  width: 99%; 
+  width: 99%;
   height: 100%;
   background-color: var(--background-color);
   z-index: 10;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
-#close{
+#close {
   color: var(--primary-color);
   font-size: 50px;
   position: fixed;
@@ -302,7 +309,8 @@ textarea {
   cursor: pointer;
 }
 
-#precedent, #suivant {
+#precedent,
+#suivant {
   color: var(--primary-color);
   font-size: 50px;
   position: fixed;
@@ -318,7 +326,7 @@ textarea {
   margin-left: 7%;
 }
 
-.lightbox_media{
+.lightbox_media {
   display: flex;
   flex-direction: column;
   width: 70%;
@@ -331,32 +339,31 @@ textarea {
   height: 95%;
   object-fit: cover;
   margin-top: 35px;
-  
 }
 .titreLightbox {
-  color : var(--primary-color);
+  color: var(--primary-color);
   font-size: 24px;
   font-weight: 400;
   margin-top: -2px;
 }
 
 /***************MENU ACCESSIBILITE*******/
-.a11y-nav{
+.a11y-nav {
   position: absolute;
   top: -10em;
   z-index: 100;
   width: 100%;
 }
 
-.a11y-nav a {   
-background-color:var(--background-color);
-color: var(--primary-color) ;
-font-weight: 100;
-position: absolute;
-left: 0;
-right: 0;
-text-align: center;
-padding: 0.5em;
+.a11y-nav a {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-weight: 100;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0.5em;
 }
 
 .a11y-nav a:focus,
@@ -364,5 +371,3 @@ padding: 0.5em;
   top: 10em;
   text-decoration: none;
 }
-
-
