@@ -1,7 +1,7 @@
-//...............PAGE D'ACCUEIL.............
-function photographerFactory(data){                                 //1ère fonction qui permet d'englober le return vers la fonction getUserCardDom
+//PAGE D'ACCUEIL
+function photographerFactory(data){                                 //fonction qui permet d'englober le return vers la fonction getUserCardDom
         
-  function getUserCardDOM() {                                     //2ème fonction qui crée les constantes et les éléments
+  function getUserCardDOM() {                                     //fonction qui crée les éléments du DOM
     const {portrait, name, city, country, tagline, price,id} = data;
     const picture = `assets/photographers/${portrait}`;
 
@@ -47,7 +47,7 @@ return{getUserCardDOM}
 }
 
 
-//..............PAGE DU PHOTOGRAPHE...............
+//PAGE DU PHOTOGRAPHE
 function photographerFactoryInfo(data){                                 
         
     function getUserMediaCardDOM() {                                     
