@@ -71,7 +71,7 @@ function photographerFactoryInfo(data){
       div.appendChild(h4);
 
       const button = document.createElement ("div");
-      button.innerHTML = `<button class="contact_button" tabindex="2" aria-label = "contacter le photographe" onclick="displayModal()">Contactez-moi</button>`;
+      button.innerHTML = `<button class="contact_button" aria-label = "contacter le photographe" onclick="displayModal()">Contactez-moi</button>`;
 
       const photoPhotographe = document.createElement ("div");
       const picture = `assets/photographers/${portrait}`;
