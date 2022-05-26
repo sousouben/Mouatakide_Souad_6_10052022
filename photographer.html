@@ -48,11 +48,13 @@
         <div class="tri">
           <p class="trier_par">Trier par</p>
           <select class="choix" tabindex="3">
-            <option class="pop" value="popularity">Popularité</option>
-            <option class="select-hr" disabled="disabled">──────────────────</option>
+            <option disabled="disabled"></option>
+            <option class="pop" value="pop">Popularité</option>
+            <option  disabled="disabled">──────────────────</option>
             <option class="date" value="date">Date</option>
-            <option class="select-hr" disabled="disabled">──────────────────</option>
-            <option class="titre" value="title">Titre</option>
+            <option disabled="disabled">──────────────────</option>
+            <option class="titre" value="titre">Titre</option>
+            <option disabled="disabled"></option>
           </select>
         </div>
         <!--LIGHTBOX-->
@@ -74,12 +76,12 @@
 				<form id="formulaire">
 					<div class=formData>
 						<label for="first">Prénom</label>
-						<input class= "text-control" aria-label = " Entrez votre prénom" type="text" id="first" name="first" required minlength="2"/>
+						<input class= "text-control" aria-label = " Entrez votre prénom" type="text" id="first" name="first" pattern="[a-zA-Z]{2,}" required/>
             <span id="firstname-error"></span>
           </div>
           <div class=formData>
 						<label for="last">Nom</label>
-						<input class= "text-control" aria-label = "Entrez votre nom" type="text" id="last" name="last" required minlength="2"/>
+						<input class= "text-control" aria-label = "Entrez votre nom" type="text" id="last" name="last" pattern="[a-zA-Z]{2,}" required/>
             <span id="lastname-error"></span>
 					</div>
           <div class=formData>

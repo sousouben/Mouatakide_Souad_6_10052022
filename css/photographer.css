@@ -95,7 +95,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 12%;
+  width: 15%;
   height: 55px;
   margin-left: 25px;
   border-radius: 5px;
@@ -112,11 +112,7 @@
   border: black solid 1px;
   box-shadow: var(--box-shadow) 3px 3px 15px;
 }
-.choix:focus {
-  outline: 0;
-  border: var(--name-photographer) solid 5px;
-  border-radius: 20px;
-}
+
 
 /**************MEDIAS**************/
 #cartes_medias {
@@ -221,6 +217,7 @@ video:focus {
   margin-left: 30%;
   position: absolute;
   top: 9%;
+  z-index: 1000;
 }
 
 .modal header {
@@ -272,14 +269,13 @@ textarea {
   height: 170px;
 }
 
-
 /*error messages*/
 #firstname-error,
 #lastname-error,
 #email-error,
 #message-error {
   color: red;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   padding: 0.5rem 0;
   display: none;
 }
