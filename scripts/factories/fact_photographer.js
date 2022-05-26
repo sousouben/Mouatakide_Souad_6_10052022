@@ -7,8 +7,7 @@ function photographerFactory(data){                                 //fonction q
 
   
     const article = document.createElement( "article" );
-    article.setAttribute("title", "Information sur le photographe");    
-
+    article.setAttribute("title", "Information sur le photographe"); 
     const img = document.createElement( "img" );
     const h2 = document.createElement( "h2" );
     const h3 = document.createElement("h3");
