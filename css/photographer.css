@@ -1,6 +1,6 @@
 :root {
   --primary-color: #901c1c;
-  --background-color-modal-price: #db8876;
+  --secondaire: #db8876;
   --background-color-button: #911c1c;
   --color-typo-price: #757575;
   --name-photographer: #d3573c;
@@ -72,13 +72,8 @@
   cursor: pointer;
 }
 
-.contact_button:hover {
-  border: black solid 1px;
-  box-shadow: var(--box-shadow) 3px 3px 15px;
-}
-.contact_button:focus {
-  border: var(--name-photographer) solid 5px;
-  border-radius: 20px;
+.contact_button:focus, .contact_button:hover { 
+  color: black;
 }
 
 /*************MENU DU TRIE******************/
@@ -104,8 +99,9 @@
   color: white;
   border: none;
   transition: all 0.3s ease;
-  justify-content: flex-start;
-  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 700;
 }
 
 .choix:hover {
@@ -130,7 +126,7 @@
 }
 .carte_media img,
 video {
-  height: 310px;
+  height: 300px;
   width: 100%;
   border-radius: 5px;
   object-fit: cover;
@@ -138,7 +134,7 @@ video {
 .carte_media img:focus,
 video:focus {
   outline: 0;
-  border: var(--primary-color) solid 5px;
+  border:var(--secondaire) solid 2px;
   border-radius: 20px;
 }
 .info_photo {
@@ -178,13 +174,13 @@ video:focus {
 #banner {
   display: flex;
   align-items: center;
-  background-color: var(--background-color-modal-price);
+  background-color: var(--secondaire);
   width: 320px;
   height: 70px;
   position: fixed;
   z-index: 1;
   border-radius: 5px 5px 0 0;
-  right: 0;
+  right: -121.18%;
   bottom: 0;
   margin-right: 50px;
 }
@@ -206,7 +202,7 @@ video:focus {
 
 .modal {
   border-radius: 5px;
-  background-color: var(--background-color-modal-price);
+  background-color: var(--secondaire);
   width: 30%;
   height: auto;
   display: flex;
@@ -265,6 +261,11 @@ textarea {
   border-radius: 5px;
 }
 
+form input:focus, #message:focus {
+  outline: 0;
+  border: black solid 2px;
+}
+
 textarea {
   height: 170px;
 }
@@ -283,7 +284,7 @@ textarea {
 /*********BANNER**********/
 
 #banner {
-  background-color: var(--background-color-modal-price);
+  background-color: var(--secondaire);
   width: 376px;
   height: 89px;
   position: fixed;

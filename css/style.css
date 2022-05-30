@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #901c1c;
-  --background-color-modal-price: #db8876;
+  --secondaire: #db8876;
   --background-color-button: #911c1c;
   --color-typo-price: #757575;
   --name-photographer: #d3573c;
@@ -12,7 +12,9 @@
 
 body {
   font-family: "DM Sans", sans-serif;
-  margin: 0;
+    margin: 0;
+    font-weight: normal;
+    font-style: normal;
 }
 
 /************HEADER****************/
@@ -28,11 +30,16 @@ header {
 h1 {
   color: var(--primary-color);
   margin-right: 100px;
+  font-size: 36px;
 }
 
 .logo {
   height: 50px;
   margin-left: 100px;
+}
+
+.logo:focus {
+  outline: 0;
 }
 
 /***************MAIN***************/
@@ -53,9 +60,10 @@ h1 {
 }
 
 .photographer_section article:focus {
-  border:var(--primary-color) solid 2px;
+  border:var(--secondaire) solid 2px;
   border-radius: 20px;
   padding: 10px;
+  outline: 0;
 }
 
 .photographer_section article h2 {
@@ -67,27 +75,19 @@ h1 {
 .photographer_section article img {
   height: 200px;
   width: 200px;
-}
-
-.photographer_section img {
-  height: 200px;
-  width: 200px;
   border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
+    object-fit: cover;
 }
 
 .photographer_section article h3 {
   color: var(--primary-color);
   font-size: 13px;
-  font-weight: 400;
-  margin-top: -30px;
+    margin-top: -30px;
 }
 
 .photographer_section article h4 {
   color: black;
-  font-size: 10px;
-  font-weight: 400;
+  font-size: 10px;  
   margin-top: -10px;
 }
 

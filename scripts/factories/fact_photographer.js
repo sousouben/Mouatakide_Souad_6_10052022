@@ -8,6 +8,9 @@ function photographerFactory(data){                                 //fonction q
   
     const article = document.createElement( "article" );
     article.setAttribute("title", "Information sur le photographe"); 
+    article.setAttribute("tabindex", "2");
+
+
     const img = document.createElement( "img" );
     const h2 = document.createElement( "h2" );
     const h3 = document.createElement("h3");
@@ -60,7 +63,8 @@ function photographerFactoryInfo(data){
 
       section.classList = "photographerHeader";
       div.classList = "infosPhotographe";
-      h2.textContent = name;     
+      h2.textContent = name; 
+      h2.setAttribute("tabindex","1");   
       h2.setAttribute("aria-label", name);
       h3.textContent = city +", "+ country;
       h4.textContent = tagline;
@@ -70,7 +74,7 @@ function photographerFactoryInfo(data){
       div.appendChild(h4);
 
       const button = document.createElement ("div");
-      button.innerHTML = `<button class="contact_button" aria-label = "contacter le photographe" onclick="displayModal()">Contactez-moi</button>`;
+      button.innerHTML = `<button class="contact_button" aria-label = "contacter le photographe" tabindex="2" onclick="displayModal()">Contactez-moi</button>`;
 
       const photoPhotographe = document.createElement ("div");
       const picture = `assets/photographers/${portrait}`;
