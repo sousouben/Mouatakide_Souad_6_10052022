@@ -1,4 +1,4 @@
-function mediaFactory(data){                                 
+function mediaFactory(data){   //FONCTION APPELEE DANS photographer.js                              
         
     function getUserMediaDOM() {  
         

@@ -69,10 +69,10 @@ function displayDataMedia(medias) {
     let i = 0;
     medias.forEach(media=> {
         if (media.photographerId == photographerId){
-            const mediaModel = mediaFactory (media);
-            const userMediaDOM = mediaModel.getUserMediaDOM();
+            const mediaModel = mediaFactory (media);//fonction dans fact_medias.js
+            const userMediaDOM = mediaModel.getUserMediaDOM();//DOM page photographe fact_medias.js
             cartesMedias.appendChild(userMediaDOM);
-            createMediaLightboxDom(media);
+            createMediaLightboxDom(media);//CREATION IMAGE ET TITRE fact_ligthbox.js
 
             totalLikes += media.likes;
         }
@@ -88,7 +88,7 @@ function displayDataMedia(medias) {
         mediaArticle.childNodes[i].childNodes[0].addEventListener("click", function (){
             mediaLocal(i+1);
             open();
-            createIconeLightboxDom ();
+            createIconeLightboxDom ();//CREATION DES BOUTONS LIGHTBOX fact_ligthbox.js
         })
 
     //EVENEMENT AU CLAVIER SUR LA PHOTO
@@ -96,7 +96,7 @@ function displayDataMedia(medias) {
             if(e.key == "Enter"){
             mediaLocal(i+1);
             open();
-            createIconeLightboxDom ();
+            createIconeLightboxDom ();//CREATION DES BOUTONS LIGHTBOX fact_ligthbox.js
             }
         });
     }

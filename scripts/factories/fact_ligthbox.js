@@ -42,7 +42,7 @@ function createMediaLightboxDom(data) {
   const { title, image, video } = data;
 
   if ("video" in data) {
-    //si il y a une video est dans la data du photographe
+    //si une video est dans la data du photographe
     const photoVideo = document.createElement("video");
     const mp4 = `assets/photographers/${video}`;
     const source = document.createElement("source");
