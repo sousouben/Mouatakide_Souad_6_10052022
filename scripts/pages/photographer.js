@@ -87,7 +87,7 @@ function displayDataMedia(medias) {
     for(let i = 0; i < mediaArticle.childNodes.length; i++){
         mediaArticle.childNodes[i].childNodes[0].addEventListener("click", function (){
             mediaLocal(i+1);
-            open();
+            open();//FONCTION OUVERTURE DE LIGHTBOX dans lightbox.js
             createIconeLightboxDom ();//CREATION DES BOUTONS LIGHTBOX fact_ligthbox.js
         })
 

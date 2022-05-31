@@ -16,9 +16,13 @@
 }
 
 .photograph-header {
-  background-color: #fafafa;
-  height: 313px;
-  margin: 0 100px;
+  background-color: #fafafa; 
+    height: 300px;
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
 }
 
 .photographerHeader {
@@ -73,24 +77,23 @@
 }
 
 .contact_button:focus, .contact_button:hover { 
+  background-color: var(--secondaire);
   color: black;
 }
 
 /*************MENU DU TRIE******************/
 .tri {
-  display: flex;
-  position: relative;
-  left: 100px;
   margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 700;
+    display: flex;
+    margin-left: 100px;
+    align-items: baseline;
+    z-index: 99;
 }
 .choix {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 15%;
+  width: 16%;
   height: 55px;
   margin-left: 25px;
   border-radius: 5px;
@@ -113,16 +116,12 @@
 /**************MEDIAS**************/
 #cartes_medias {
   display: flex;
-  width: 99%;
-  height: 1450px;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 58px 100px 100px 100px;
 }
 .carte_media {
-  height: 360px;
-  width: 26%;
-  display: flex;
-  flex-direction: column;
-  margin-left: 95px;
+  width: 350px;
 }
 .carte_media img,
 video {
@@ -194,8 +193,8 @@ video:focus {
   margin-left: 70px;
 }
 #banner i {
-  font-size: 22px;
-  margin-left: 10px;  
+  font-size: 22px; 
+     
 }
 
 /*****************MODAL CONTACT**************/
@@ -285,13 +284,18 @@ textarea {
 
 #banner {
   background-color: var(--secondaire);
-  width: 376px;
-  height: 89px;
   position: fixed;
-  z-index: 1;
-  border-radius: 5px 5px 0px 0px;
-  right: 0;
+  display: flex;
+  align-items: center;
   bottom: 0;
+  right: 36px;
+  width: 376px;
+  height: 70px;
+  border-radius: 5px 5px 0 0;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 /*************LIGHTBOX***********/
@@ -301,38 +305,41 @@ textarea {
   position: fixed;
   top: 0;
   left: 0;
-  width: 99%;
+  width: 100%;
   height: 100%;
   background-color: var(--background-color);
   z-index: 10;
   transition: opacity 0.3s;
+  overflow: auto;
 }
 
 #close {
   color: var(--primary-color);
-  font-size: 50px;
+  width: 48px;
   position: fixed;
-  top: 30px;
-  right: 8%;
-  z-index: 12;
+  top: 38px;
+  right: 10%;
+  z-index: 13;
   cursor: pointer;
+  right: 10%;
 }
 
 #precedent,
 #suivant {
   color: var(--primary-color);
-  font-size: 50px;
+  width: 48px;
+  height: 100%;
   position: fixed;
-  top: 40%;
+  top: 50%;
   z-index: 12;
   cursor: pointer;
 }
 
 #suivant {
-  margin-left: 90%;
+  right: 10%;
 }
 #precedent {
-  margin-left: 7%;
+  left: 12.5%;
 }
 
 .lightbox_media {
@@ -345,7 +352,7 @@ textarea {
 .lightbox_media img,
 .lightbox_media video {
   width: 100%;
-  height: 95%;
+  height: auto;
   object-fit: cover;
   margin-top: 35px;
 }
