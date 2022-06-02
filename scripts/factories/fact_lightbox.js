@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 //CREATION DES ELEMENTS DU DOM POUR LA LIGHTBOX
 
 const lightbox = document.createElement("div");

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const url = new URL(window.location.href);
 const photographerId = url.searchParams.get("id");
 const menuSelect = document.querySelector(".choix");
@@ -65,8 +66,7 @@ function displayDataMedia(medias) {
     console.log(lightbox);
     lightbox.innerHTML = "";
 
-    let totalLikes = 0;
-    let i = 0;
+    let totalLikes = 0;    
     medias.forEach(media=> {
         if (media.photographerId == photographerId){
             const mediaModel = mediaFactory (media);//fonction dans fact_medias.js

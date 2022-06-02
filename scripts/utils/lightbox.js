@@ -1,3 +1,6 @@
+/* eslint-disable no-cond-assign */
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 const lightboxMedia = document.getElementsByClassName("lightbox_media");
 
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 //PAGE D'ACCUEIL
 function photographerFactory(data){                                 //fonction qui permet d'englober le return vers la fonction getUserCardDom
         
@@ -74,12 +75,12 @@ function photographerFactoryInfo(data){
       div.appendChild(h4);
 
       const button = document.createElement ("div");
+      button.classList.add("button_button");
       button.innerHTML = `<button class="contact_button" aria-label = "contacter le photographe" tabindex="2" onclick="displayModal()">Contactez-moi</button>`;
 
       const photoPhotographe = document.createElement ("div");
       const picture = `assets/photographers/${portrait}`;
       const img = document.createElement( "img" );
-
       photoPhotographe.classList = ("photo");
       img.setAttribute("alt", "photo" +" " + name);
       img.setAttribute("src",picture);

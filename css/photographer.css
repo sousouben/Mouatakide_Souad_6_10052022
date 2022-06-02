@@ -38,7 +38,7 @@
   height: 100%;
 }
 .infosPhotographe h2 {
-  font-size: 50px;
+  font-size: 64px;
   color: var(--name-photographer);
 }
 .infosPhotographe h2:focus {
@@ -59,8 +59,10 @@
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  margin-top: 50px;
   object-fit: cover;
+}
+.button_button{
+  width: 30%;
 }
 
 .contact_button {
@@ -76,8 +78,7 @@
   cursor: pointer;
 }
 
-.contact_button:focus, .contact_button:hover { 
-  background-color: var(--secondaire);
+.contact_button:focus, .contact_button:hover {  
   color: black;
 }
 

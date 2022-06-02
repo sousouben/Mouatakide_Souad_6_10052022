@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 function mediaFactory(data){   //FONCTION APPELEE DANS photographer.js                              
         
     function getUserMediaDOM() {  

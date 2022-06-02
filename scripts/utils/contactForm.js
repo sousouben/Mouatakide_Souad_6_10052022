@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 //Variables du formulaire
 const firstName = document.querySelector("#first");
 firstName.addEventListener("change", checkOutFirstName);
@@ -59,7 +60,7 @@ function checkOutLastName() {
 
 //regex email pour accepter les charactères spéciaux chiffres et lettre avant et après le @
 let regexEmail =
-  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 // VERIFICATION EMAIL
 function checkOutEmail() {
@@ -120,9 +121,17 @@ function validFormulaire(e) {
     checkOutEmail() &&
     validMessage()
   ) {
+    const formData = {
+      firstName: firstName.value,
+      lastName: lastName.value,
+      email: email.value,
+      message: message.value
+    }
+    console.log(formData);
     closeModal();
     document.getElementById("formulaire").reset();
     initializeFields();
+    
 
     //Remise à zéro des champs du formulaire
   } else {
