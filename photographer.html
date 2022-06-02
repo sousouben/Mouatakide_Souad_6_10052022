@@ -26,13 +26,13 @@
 
   <body>
     <!--MENU ACCESSIBILITE-->
-    <ul class="a11y-nav" tabindex="0">
+    <ul class="a11y-nav" role="navigation" tabindex="0">
       <li>
         <a href="#contact_modal" tabindex="1">Aller au formulaire de contact</a>
       </li>
       <li>
         <a href="#cartes_medias" tabindex="1">Aller à la lightbox</a>
-      </li>      
+      </li>
       <li>
         <a href="index.html" tabindex="1">Aller à la page d'acceuil</a>
       </li>
@@ -54,11 +54,11 @@
       <div class="photograph-header"></div>
       <section class="photograph_medias">
         <div class="tri">
-          <label for="choix" class="trier_par">Trier par</label>          
+          <label for="choix" class="trier_par">Trier par</label>
           <select class="choix" id="choix" tabindex="3">
             <option disabled="disabled"></option>
             <option class="pop" value="pop">Popularité</option>
-            <option  disabled="disabled">──────────────────</option>
+            <option disabled="disabled">──────────────────</option>
             <option class="date" value="date">Date</option>
             <option disabled="disabled">──────────────────</option>
             <option class="titre" value="titre">Titre</option>
@@ -75,38 +75,80 @@
     </main>
     <!--FIN MAIN-->
     <!--MODAL CONTACT-->
-    <div id="contact_modal">
-			<div class="modal">
-				<header>
-          <h2 id="titre_modal" aria-label = "Formulaire de contact">Contactez-moi</h2>
-          <img src="assets/icons/close.svg" alt = "ferme le formulaire" onclick="closeModal()" />
+    <section id="contact_modal">
+      <div class="modal">
+        <header>
+          <h2 id="titre_modal" aria-label="Formulaire de contact">
+            Contactez-moi
+          </h2>
+          <img
+            src="assets/icons/close.svg"
+            alt="ferme le formulaire"
+            onclick="closeModal()"
+          />
         </header>
-				<form id="formulaire">
-					<div class=formData>
-						<label for="first">Prénom</label>
-						<input class= "text-control" aria-label = " Entrez votre prénom" type="text" id="first" name="first" pattern="[a-zA-Z]{2,}" required/>
+        <form id="formulaire">
+          <div class="formData">
+            <label for="first">Prénom</label>
+            <input
+              class="text-control"
+              aria-label=" Entrez votre prénom"
+              type="text"
+              id="first"
+              name="first"
+              pattern="[a-zA-Z]{2,}"
+              required
+            />
             <span id="firstname-error"></span>
           </div>
-          <div class=formData>
-						<label for="last">Nom</label>
-						<input class= "text-control" aria-label = "Entrez votre nom" type="text" id="last" name="last" pattern="[a-zA-Z]{2,}" required/>
+          <div class="formData">
+            <label for="last">Nom</label>
+            <input
+              class="text-control"
+              aria-label="Entrez votre nom"
+              type="text"
+              id="last"
+              name="last"
+              pattern="[a-zA-Z]{2,}"
+              required
+            />
             <span id="lastname-error"></span>
-					</div>
-          <div class=formData>
-						<label for="email">Email</label>
-						<input class= "text-control" aria-label = "Entrez votre adresse email" type="email" id="email" name="email" required/>
+          </div>
+          <div class="formData">
+            <label for="email">Email</label>
+            <input
+              class="text-control"
+              aria-label="Entrez votre adresse email"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
             <span id="email-error"></span>
-					</div>
-          <div class=formData>
-						<label for="message">Votre message</label>
-						<textarea class= "text-control" aria-label = "Détail de votre message" type="text" id="message" name="message" required></textarea>
+          </div>
+          <div class="formData">
+            <label for="message">Votre message</label>
+            <textarea
+              class="text-control"
+              aria-label="Détail de votre message"
+              type="text"
+              id="message"
+              name="message"
+              required
+            ></textarea>
             <span id="message-error"></span>
-					</div>
-          <button class="contact_button" type = button aria-label = "envoyer le formulaire" id="envoyer">Envoyer</button>
-				</form>
-			</div>
-		</div>
+          </div>
+          <button
+            class="contact_button"
+            type="button"
+            aria-label="envoyer le formulaire"
+            id="envoyer"
+          >
+            Envoyer
+          </button>
+        </form>
+      </div>
+    </section>
     <!--FIN MODAL DE CONTACT-->
-    
   </body>
 </html>

@@ -125,13 +125,12 @@ function validFormulaire(e) {
       firstName: firstName.value,
       lastName: lastName.value,
       email: email.value,
-      message: message.value
-    }
+      message: message.value,
+    };
     console.log(formData);
     closeModal();
     document.getElementById("formulaire").reset();
     initializeFields();
-    
 
     //Remise à zéro des champs du formulaire
   } else {

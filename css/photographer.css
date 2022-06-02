@@ -16,13 +16,13 @@
 }
 
 .photograph-header {
-  background-color: #fafafa; 
-    height: 300px;
-    margin: 0 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 5px;
+  background-color: #fafafa;
+  height: 300px;
+  margin: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
 }
 
 .photographerHeader {
@@ -43,7 +43,7 @@
 }
 .infosPhotographe h2:focus {
   outline: 0;
-  border: var(--primary-color) solid 5px;
+  border:var(--secondaire) solid 2px;
   border-radius: 20px;
 }
 .infosPhotographe h3 {
@@ -61,7 +61,7 @@
   border-radius: 50%;
   object-fit: cover;
 }
-.button_button{
+.button_button {
   width: 30%;
 }
 
@@ -78,17 +78,28 @@
   cursor: pointer;
 }
 
-.contact_button:focus, .contact_button:hover {  
+.button_button .contact_button:focus,
+.button_button .contact_button:hover {
+  background-color: var(--secondaire);
   color: black;
+  border: black solid 1px;
+  box-shadow: var(--box-shadow)1px 1px 8px 0px;
+}
+
+#contact_modal .contact_button:focus,
+#contact_modal .contact_button:hover {
+  color: black;
+  border: black solid 1px;
+  box-shadow: var(--box-shadow) 1px 1px 8px 0px;
 }
 
 /*************MENU DU TRIE******************/
 .tri {
   margin-top: 10px;
-    display: flex;
-    margin-left: 100px;
-    align-items: baseline;
-    z-index: 99;
+  display: flex;
+  margin-left: 100px;
+  align-items: baseline;
+  z-index: 99;
 }
 .choix {
   display: flex;
@@ -108,11 +119,10 @@
   font-weight: 700;
 }
 
-.choix:hover {
+.choix:hover{
   border: black solid 1px;
-  box-shadow: var(--box-shadow) 3px 3px 15px;
+  box-shadow: var(--box-shadow) 1px 1px 8px 0px;
 }
-
 
 /**************MEDIAS**************/
 #cartes_medias {
@@ -134,7 +144,7 @@ video {
 .carte_media img:focus,
 video:focus {
   outline: 0;
-  border:var(--secondaire) solid 2px;
+  border: var(--secondaire) solid 2px;
   border-radius: 20px;
 }
 .info_photo {
@@ -194,8 +204,7 @@ video:focus {
   margin-left: 70px;
 }
 #banner i {
-  font-size: 22px; 
-     
+  font-size: 22px;
 }
 
 /*****************MODAL CONTACT**************/
@@ -261,7 +270,8 @@ textarea {
   border-radius: 5px;
 }
 
-form input:focus, #message:focus {
+form input:focus,
+#message:focus {
   outline: 0;
   border: black solid 2px;
 }
@@ -289,7 +299,7 @@ textarea {
   display: flex;
   align-items: center;
   bottom: 0;
-  right: 36px;
+  right: -31px;
   width: 376px;
   height: 70px;
   border-radius: 5px 5px 0 0;
@@ -316,7 +326,7 @@ textarea {
 
 #close {
   color: var(--primary-color);
-  width: 48px;
+  font-size: 48px;
   position: fixed;
   top: 38px;
   right: 10%;
@@ -328,8 +338,7 @@ textarea {
 #precedent,
 #suivant {
   color: var(--primary-color);
-  width: 48px;
-  height: 100%;
+  font-size: 48px;
   position: fixed;
   top: 50%;
   z-index: 12;
@@ -340,7 +349,7 @@ textarea {
   right: 10%;
 }
 #precedent {
-  left: 12.5%;
+  left: 8.7%;
 }
 
 .lightbox_media {

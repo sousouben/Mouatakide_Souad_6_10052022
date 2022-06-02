@@ -30,7 +30,7 @@ function createIconeLightboxDom() {
   iconeClose.id = "close";
   iconeClose.setAttribute("aria-label", "fermer la lightbox");
   lightbox.appendChild(iconeClose);
-  iconeClose.addEventListener("click", close);//FONCTION CLOSE dans lightbox.js
+  iconeClose.addEventListener("click", close); //FONCTION CLOSE dans lightbox.js
 }
 
 // CREATION IMAGE ET TITRE
