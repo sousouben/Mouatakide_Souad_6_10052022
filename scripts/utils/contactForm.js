@@ -107,6 +107,7 @@ function displayModal() {
   modal.setAttribute("aria-hidden", false);
   modal.style.display = "block";
   backgroundForm.style.display = "block";
+  firstName.focus();
   initializeFields();
 }
 function closeModal() {

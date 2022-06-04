@@ -275,6 +275,7 @@ textarea {
   height: 68px;
   border: none;
   border-radius: 5px;
+  font-size: 25px;
 }
 
 form input:focus,
@@ -293,7 +294,7 @@ textarea {
 #email-error,
 #message-error {
   color: red;
-  font-size: 0.9rem;
+  font-size: 20px;
   padding: 0.5rem 0;
   display: none;
 }

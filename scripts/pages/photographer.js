@@ -119,7 +119,6 @@ function ajoutLikes() {
       // au click sur l'element
 
       const nbreLike = e.parentElement.children[1]; //creation constante qui cible le nbre de like
-
       nbreLike.textContent++; // j'aoute 1 au nbre de like
       let totalLikes = document.getElementById("total_likes"); // je cible le total des likes dans le bandeau
       totalLikes.innerHTML++; // j'ajoute 1 a ce total
