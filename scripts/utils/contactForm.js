@@ -1,5 +1,8 @@
 /* eslint-disable no-unused-vars */
 //Variables du formulaire
+const modal = document.getElementById("contact_modal");
+const backgroundForm = document.querySelector(".background-modal");
+const main = document.getElementById("main");
 const firstName = document.querySelector("#first");
 firstName.addEventListener("change", checkOutFirstName);
 const lastName = document.querySelector("#last");
@@ -98,14 +101,18 @@ function validMessage() {
 }
 
 // OUVERTURE ET FERMETURE FORMULAIRE
-let modal = document.getElementById("contact_modal");
 
 function displayModal() {
+  main.setAttribute("aria-hidden", true);
+  modal.setAttribute("aria-hidden", false);
   modal.style.display = "block";
+  backgroundForm.style.display = "block";
   initializeFields();
 }
 function closeModal() {
   modal.style.display = "none";
+  backgroundForm.style.display = "none";
+
   initializeFields();
 }
 

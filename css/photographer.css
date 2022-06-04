@@ -208,6 +208,13 @@ video:focus {
 }
 
 /*****************MODAL CONTACT**************/
+.background-modal {
+  display: none;
+  background-color: #c4c4c4;
+  position: fixed;
+  inset: 0;
+  opacity: 0.4;
+}
 
 .modal {
   border-radius: 5px;

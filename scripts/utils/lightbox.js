@@ -5,6 +5,7 @@ const lightboxMedia = document.getElementsByClassName("lightbox_media");
 
 function open() {
   //appelée dans photographer.js/displayDataMedia()
+
   lightbox.style.display = "block";
 }
 

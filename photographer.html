@@ -25,19 +25,6 @@
   </head>
 
   <body>
-    <!--MENU ACCESSIBILITE-->
-    <ul class="a11y-nav" role="navigation" tabindex="0">
-      <li>
-        <a href="#contact_modal" tabindex="1">Aller au formulaire de contact</a>
-      </li>
-      <li>
-        <a href="#cartes_medias" tabindex="1">Aller à la lightbox</a>
-      </li>
-      <li>
-        <a href="index.html" tabindex="1">Aller à la page d'acceuil</a>
-      </li>
-    </ul>
-    <!--FIN MENU ACCESSIBILITE-->
     <!--HEADER-->
     <header role="banner" id="header">
       <a href="index.html" tabindex="1">
@@ -50,7 +37,7 @@
     </header>
     <!--FIN HEADER-->
     <!--MAIN-->
-    <main id="main" role="main">
+    <main id="main" aria-hidden="false">
       <div class="photograph-header"></div>
       <section class="photograph_medias">
         <div class="tri">
@@ -66,7 +53,7 @@
           </select>
         </div>
         <!--LIGHTBOX-->
-        <div id="cartes_medias"></div>
+        <div id="cartes_medias" role="dialog"></div>
         <!--FIN LIGHTBOX-->
         <!--BANNIERE-->
         <aside id="banner"></aside>
@@ -75,7 +62,8 @@
     </main>
     <!--FIN MAIN-->
     <!--MODAL CONTACT-->
-    <section id="contact_modal">
+    <div class="background-modal"></div>
+    <section id="contact_modal" aria-hidden="true" role="dialog">
       <div class="modal">
         <header>
           <h2 id="titre_modal" aria-label="Formulaire de contact">
