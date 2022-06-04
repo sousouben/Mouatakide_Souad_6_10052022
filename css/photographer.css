@@ -381,27 +381,67 @@ textarea {
   margin-top: -2px;
 }
 
-/***************MENU ACCESSIBILITE*******/
-.a11y-nav {
-  position: absolute;
-  top: -10em;
-  z-index: 100;
+/***********MEDIA QUERIES pour iphone 6***********/
+@media screen and (max-width: 375px) {
+  .photograph-header{
+    height: 325px;
+    margin: 0;  
+    display: flex;  
+  }
+  .photographerHeader{
+    flex-direction: column;
+  }
+  .photograph-header img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 64px;
+    left: 16px;
+}
+.infosPhotographe{
+  text-align: center;  
   width: 100%;
 }
+.infosPhotographe h2{
+  font-size: 48px;  
+}
+.contact_button{
+  width: 129px;
+}
 
-.a11y-nav a {
-  background-color: var(--background-color);
-  color: var(--primary-color);
-  font-weight: 100;
-  position: absolute;
+.choix{
+  width: 52%;
+}
+
+#cartes_medias{
+  margin: auto;
+}
+.carte_media{
+  width: 100%;
+}
+#banner{
+  width: 300px;
+  left: 67px;
+}
+
+.modal{
+  top: 0;
   left: 0;
-  right: 0;
-  text-align: center;
-  padding: 0.5em;
+  right:0;
+  padding: 0;
+  width: 100%;
+  margin-left: 0;
+}
+.modal header h2{
+  font-size: 34px; 
+}
+form{
+  width: 75%;
 }
 
-.a11y-nav a:focus,
-.a11y-nav a:hover {
-  top: 10em;
-  text-decoration: none;
+.modal header img{
+  position: absolute;
+  top: 80px;
+  right: 21px;
 }
+  }
