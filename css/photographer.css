@@ -140,6 +140,7 @@ video {
   width: 100%;
   border-radius: 5px;
   object-fit: cover;
+  object-position: 50% 17%;
 }
 .carte_media img:focus,
 video:focus {
