@@ -136,7 +136,7 @@ function validFormulaire(e) {
       message: message.value,
     };
     console.log(formData);
-    closeModal();
+    closeModal();   
     document.getElementById("formulaire").reset();
     initializeFields();
 

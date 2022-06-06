@@ -113,24 +113,49 @@ function displayDataMedia(medias) {
 function ajoutLikes() {
   const coeurs = document.querySelectorAll(".coeur"); // je cible le span des coeurs
   console.log(coeurs);
-  coeurs.forEach((e) => {
+  coeurs.forEach((e) => {   
     //EVENEMENT AU CLICK
     e.addEventListener("click", function () {
-      // au click sur l'element
-      const nbreLike = e.parentElement.children[1]; //creation constante qui cible le nbre de like
-      nbreLike.textContent++; // j'aoute 1 au nbre de like
-      let totalLikes = document.getElementById("total_likes"); // je cible le total des likes dans le bandeau
-      totalLikes.innerHTML++; // j'ajoute 1 a ce total
-      
+      if (e.getAttribute("class") != "liked") {
+        // Si le coeur n'est pas liked
+        // au click sur l'element
+        e.setAttribute("class", "liked"); // J'ajoute la class liked au coeur
+        const nbreLike = e.parentElement.children[1]; //creation constante qui cible le nbre de like
+        nbreLike.textContent++; // j'aoute 1 au nbre de like
+        let totalLikes = document.getElementById("total_likes"); // je cible le total des likes dans le bandeau
+        totalLikes.innerHTML++; // j'ajoute 1 
+      } else {
+        // Si le coeur est déjà liked
+        e.setAttribute("class", ""); // Je lui enlève la class liked
+
+        // Je décrémente le coeur et le total
+        const nbreLike = e.parentElement.children[1]; //creation constante qui cible le nbre de like
+        nbreLike.textContent--; // j'aoute 1 au nbre de like
+        let totalLikes = document.getElementById("total_likes"); // je cible le total des likes dans le bandeau
+        totalLikes.innerHTML--; // j'ajoute 1
+      }
     });
 
     //EVENEMENT AU CLAVIER AVEC TOUCHE ENTREE
     e.addEventListener("keypress", function () {
-      const nbreLike = e.parentElement.children[1];
+      if (e.getAttribute("class") != "liked") {
+        // Si le coeur n'est pas liked
+        // au click sur l'element
+        e.setAttribute("class", "liked"); // J'ajoute la class liked au coeur
+        const nbreLike = e.parentElement.children[1]; //creation constante qui cible le nbre de like
+        nbreLike.textContent++; // j'aoute 1 au nbre de like
+        let totalLikes = document.getElementById("total_likes"); // je cible le total des likes dans le bandeau
+        totalLikes.innerHTML++; // j'ajoute 1 
+      } else {
+        // Si le coeur est déjà liked
+        e.setAttribute("class", ""); // Je lui enlève la class liked
 
-      nbreLike.textContent++;
-      let totalLikes = document.getElementById("total_likes");
-      totalLikes.innerHTML++;
+        // Je décrémente le coeur et le total
+        const nbreLike = e.parentElement.children[1]; //creation constante qui cible le nbre de like
+        nbreLike.textContent--; // j'aoute 1 au nbre de like
+        let totalLikes = document.getElementById("total_likes"); // je cible le total des likes dans le bandeau
+        totalLikes.innerHTML--; // j'ajoute 1
+      }
     });
   });
 }
