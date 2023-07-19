@@ -1,0 +1,11 @@
+maquettes 
+https://www.figma.com/file/Q3yNeD7WTK9QHDldg9vaRl/UI-Design-FishEye-FR?type=design&mode=design
+
+Des exemples de données au format JSON
+https://github.com/OpenClassrooms-Student-Center/Front-End-Fisheye/blob/main/data/photographers.json
+
+ la base de son code sur ce repo
+https://github.com/OpenClassrooms-Student-Center/Front-End-Fisheye.git
+
+lecteurs d'écran
+https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Accessibility#Screenreaders
